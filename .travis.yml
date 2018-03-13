@@ -1,17 +1,14 @@
 language: node_js
 node_js:
+  - "9"
   - "8"
-  - "6"
-  - "4"
-  - "0.12"
-  - "0.10"
 
 install:
-  - wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.4.9.tgz
-  - tar xzf mongodb-linux-x86_64-2.4.9.tgz
-  - export PATH=${PWD}/mongodb-linux-x86_64-2.4.9/bin/:$PATH
+  - wget http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-3.4.13.tgz
+  - tar xzf mongodb-linux-x86_64-3.4.13.tgz
+  - export PATH=${PWD}/mongodb-linux-x86_64-3.4.13/bin/:$PATH
   - mongod --version
-  
+
 script:
   - npm install
   - ./test.sh --db=mongodb --reporter=spec --quick

@@ -34,6 +34,10 @@
     {
       "name": "Diogo Duailibe",
       "email": "diogo.duailibe.silva@gmail.com"
+    },
+    {
+      "name": "Oleg Bogdanov",
+      "email": "olegbogdanov86@gmail.com"
     }
   ],
   "description": "Embedded Node.js database upward compatible with MongoDB",
@@ -46,7 +50,7 @@
   ],
   "main": "./lib/main",
   "engines": {
-    "node": ">= v0.8.x"
+    "node": ">= v8.x.x"
   },
   "dependencies": {
     "lodash": "^4.17.5",
@@ -68,6 +72,8 @@
     "optimist": "0.6.x",
     "step": "^1.0.0",
     "benchmark": "^2.1.4",
-    "mocha": "^1.21.5"
+    "mocha": "^1.21.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
   }
 }
